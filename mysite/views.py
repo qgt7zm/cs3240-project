@@ -1,6 +1,6 @@
-from django.http import HttpResponse
+from django.shortcuts import redirect
 
 
 def root(request):
     """Redirect the user to the main app"""
-    return HttpResponse("placeholder")
+    return redirect("myapp:index")

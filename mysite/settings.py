@@ -53,6 +53,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     # 'django.contrib.sites',
 
+    'myapp.apps.MyAppConfig',
     'django_bootstrap5',
 
     # Google Login
