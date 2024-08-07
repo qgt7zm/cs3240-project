@@ -1,0 +1,15 @@
+# Needed for running website
+Django>=5.0.8
+django-bootstrap5>=24.2
+
+# Needed for Google login
+django-allauth>=64.0.0
+
+# Needed for Amazon cloud storage
+boto3>=1.34.155
+django-storages>=1.14.4
+
+# Needed for Heroku hosting
+gunicorn>=22.0.0
+django-on-heroku>=1.1.2
+dj-database-url>=2.2.0

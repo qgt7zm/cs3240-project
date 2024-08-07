@@ -27,7 +27,11 @@ and creating the filterable table for viewing reports.
 
 ## Running Locally
 
+Below are steps to run the application. For the best experience, use PyCharm and Python 3.12.
+
 1. Create a virtual environment through an IDE or using `python3 -m venv .venv`.
+    - You may need to activate the virtual environment using `source .venv/bin/activate` (Unix) or
+      `.venv\Scripts\activate` (Windows).
 2. Install the packages using `pip3 install -r requirements.txt`.
 3. Run the app using `python3 manage.py runserver 8000`.
 4. Visit the development server at http://127.0.0.1:8000/.
