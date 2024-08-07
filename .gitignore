@@ -1,0 +1,15 @@
+# PyCharm files
+.idea/
+
+# Python files
+*.pyc
+
+# Environment files
+.venv/
+.env
+
+# SQL files
+*.sqlite3
+
+# macOS files
+.DS_Store
