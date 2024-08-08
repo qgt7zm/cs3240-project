@@ -8,6 +8,9 @@
 .venv/
 .env
 
+# Static files
+staticfiles/
+
 # SQL files
 *.sqlite3
 

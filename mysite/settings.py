@@ -51,7 +51,6 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    # 'django.contrib.sites',
 
     'myapp.apps.MyAppConfig',
     'django_bootstrap5',
@@ -199,10 +198,11 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/5.0/howto/static-files/
 
 # https://docs.djangoproject.com/en/5.0/howto/static-files/deployment/
-# https://devcenter.heroku.com/articles/django-assets
-STATIC_URL = '/static/'
-STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')  # Static files for admin on Heroku
-STATICFILES_DIRS = [BASE_DIR / 'static']  # Other static files
+STATIC_URL = '/static/'  # Static files website URL
+STATICFILES_DIRS = [
+    BASE_DIR / 'static'
+]  # Static files local locations
+STATIC_ROOT = BASE_DIR / 'staticfiles'  # Static files for production
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.0/ref/settings/#default-auto-field

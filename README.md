@@ -40,6 +40,12 @@ Below are steps to run the application. For the best experience, use PyCharm and
 5. Run the app using `python3 manage.py runserver 8000`.
 6. Visit the development server at http://127.0.0.1:8000/.
 
+## Deploying Static Files
+
+1. Run `python3 manage.py collectstatic` to collect static files into a single folder.
+2. Set `DEBUG` to `False` in .env.
+3. Upload the static files folder to the hosting server.
+
 ## Data Disclaimer
 
 This project was created for a university course to learn how to develop software in a group.
