@@ -16,6 +16,7 @@ Including another URLconf
 """
 
 from django.contrib import admin
+from django.contrib.auth.views import LogoutView
 from django.urls import path, include
 
 from mysite import views
@@ -24,4 +25,9 @@ urlpatterns = [
     path('', views.root),
     path('admin/', admin.site.urls),
     path('myapp/', include("myapp.urls")),
+
+    # Google Login
+    path('accounts/', include('allauth.urls')),
+    path('accounts/', include('allauth.socialaccount.urls')),
+    path('logout', LogoutView.as_view()),
 ]
