@@ -40,11 +40,15 @@ Below are steps to run the application. For the best experience, use PyCharm and
 5. Run the app using `python3 manage.py runserver 8000`.
 6. Visit the development server at http://127.0.0.1:8000/.
 
-## Deploying Static Files
+## Deploying to Production
 
-1. Run `python3 manage.py collectstatic` to collect static files into a single folder.
-2. Set `DEBUG` to `False` in .env.
-3. Upload the static files folder to the hosting server.
+Below are steps to deploy the application. Make sure not to include any secret keys in your repository!
+
+1. Create GitHub repository secrets for each field in .env and move [django.yml](django.yml) to .github/workflows to
+   enable continuous integration.
+2. Fill out the environment variables on the hosting server and set `DEBUG` to `False`.
+3. Run `python3 manage.py collectstatic` to collect static files into a single folder.
+4. Upload the static files folder to the hosting server.
 
 ## Data Disclaimer
 
@@ -55,5 +59,5 @@ Any examples bearing resemblance to real-life data are purely coincidental and u
 ## Licensing
 
 This code is released under the permissive BSD-3 license (the same as Django's).
-If you wish to consult this repository for your own academic project, you should also contact your instructors 
+If you wish to consult this repository for your own academic project, you should also contact your instructors
 regarding their plagiarism policy.

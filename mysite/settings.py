@@ -14,7 +14,6 @@ from environ import Env
 from pathlib import Path
 
 import dj_database_url
-import os
 import sys
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
@@ -29,7 +28,7 @@ env = Env(
     # Configure casting/defaults
     DEBUG=(bool, False),
 )
-Env.read_env(os.path.join(BASE_DIR, '.env'))
+Env.read_env(BASE_DIR / '.env')
 
 # SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = env('SECRET_KEY')
