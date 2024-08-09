@@ -34,8 +34,8 @@ Below are steps to run the application. For the best experience, use PyCharm and
       `.venv\Scripts\activate` (Windows).
 2. Install the packages using `pip3 install -r requirements.txt`.
 3. Fill in your secret keys in [.env.blank](.env.blank) and rename the file to .env.
-   - Generate a Django secret key using `python3 gen_key.py`.
-   - You will need a Google OAuth key, an Amazon AWS account, and a local or remote PostgreSQL database.
+    - Generate a Django secret key using `python3 gen_key.py`.
+    - You will need a Google OAuth key, an Amazon AWS account, and a local or remote PostgreSQL database.
 4. Migrate your database using `python3 manage.py migrate`.
 5. Run the app using `python3 manage.py runserver 8000`.
 6. Visit the development server at http://127.0.0.1:8000/.
