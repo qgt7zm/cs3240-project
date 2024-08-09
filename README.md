@@ -51,3 +51,9 @@ Below are steps to run the application. For the best experience, use PyCharm and
 This project was created for a university course to learn how to develop software in a group.
 As such, no real names, photos, cases, or other data will be uploaded to this repository.
 Any examples bearing resemblance to real-life data are purely coincidental and unintentional.
+
+## Licensing
+
+This code is released under the permissive BSD-3 license (the same as Django's).
+If you wish to consult this repository for your own academic project, you should also contact your instructors 
+regarding their plagiarism policy.
