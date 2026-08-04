@@ -41,6 +41,36 @@ Make sure not to include any secret keys in your repository!
 4. Run `python3 manage.py collectstatic` to collect static files into a single folder.
 5. Upload the static files folder to the hosting server.
 
+## Screenshots
+
+### Users
+
+Log in to track your reports or remain anonymous.
+
+<img src="screenshots/login.png" alt="Login screen" width=400>
+
+Submit a report and attach relevant files.
+
+<img src="screenshots/submit_report.png" alt="Submit form" width=400>
+
+Check back to see the status of your reports.
+
+<img src="screenshots/your_reports.png" alt="Submit form" width=600>
+
+Access mental health resources directly from the website.
+
+<img src="screenshots/resources.png" alt="Submit form" width=600>
+
+### Admins
+
+Log in to filter user reports.
+
+<img src="screenshots/user_reports.png" alt="Submit form" width=600>
+
+Review user submissions and provide comments.
+
+<img src="screenshots/admin_actions.png" alt="Submit form" width=400>
+
 ## Data Disclaimer
 
 This project was created for a university course to learn how to develop software in a group. As such, no real names, photos, cases, or other data will be uploaded to this repository. Any examples bearing resemblance to real-life data are purely coincidental and unintentional.
