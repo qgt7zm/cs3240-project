@@ -31,48 +31,61 @@
 
                             <div class="mb-3">
                                 <label for="subject">Subject:</label>
-                                <input type="text" id="subject" name="subject">
+                                <input type="text" id="subject" name="subject" value="{{ request.POST.subject }}">
                             </div>
 
                             <div class="mb-3">
                                 <label for="category">Category:</label>
                                 <select id="category" name="category">
                                     {% for category in category_choices %}
+                                    {% if category == request.POST.category %}
+                                    <option value="{{ category }}" selected>{{ category }}</option>
+                                    {% else %}
                                     <option value="{{ category }}">{{ category }}</option>
+                                    {% endif %}
                                     {% endfor %}
                                 </select>
                             </div>
 
                             <div class="mb-3">
                                 <label for="user">Uploader:</label>
-                                <input type="text" id="user" name="user">
+                                <input type="text" id="user" name="user" value="{{ request.POST.user }}">
                             </div>
 
                             <div class="mb-3">
                                 <label for="date">Date:</label>
                                 <select id="date" name="date">
                                     {% for date in date_choices %}
+                                    {% if date == request.POST.date %}
+                                    <option value="{{ date }}" selected>{{ date }}</option>
+                                    {% else %}
                                     <option value="{{ date }}">{{ date }}</option>
+                                    {% endif %}
                                     {% endfor %}
                                 </select>
                             </div>
 
                             <div class="mb-3">
                                 <label for="file">Filename:</label>
-                                <input type="text" id="file" name="file">
+                                <input type="text" id="file" name="file" value="{{ request.POST.file }}">
                             </div>
 
                             <div class="mb-3">
                                 <label for="status">Status:</label>
                                 <select id="status" name="status">
                                     {% for status in status_choices %}
+                                    {% if status == request.POST.status %}
+                                    <option value="{{ status }}" selected>{{ status }}</option>
+                                    {% else %}
                                     <option value="{{ status }}">{{ status }}</option>
+                                    {% endif %}
                                     {% endfor %}
                                 </select>
                             </div>
 
                             <div class="button-container">
                                 <button type="submit" class="btn btn-primary">Apply Filter</button>
+                                <a class="btn btn-danger" href="{% url 'myapp:admin_reports' %}">Clear Filters</a>
                             </div>
                         </form>
                     </div>

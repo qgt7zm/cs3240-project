@@ -8,7 +8,7 @@
     <h2>Report</h2>
     <div class="row">
         <!-- Report Details Section -->
-        <div class="col-md-8">
+        <div class="col-md-6">
             <p><strong>Submitted By:</strong> {{ user_report.user }}</p>
             <p><strong>Subject:</strong> {{ user_report.subject }}</p>
             <p><strong>Category:</strong> {{ user_report.get_category_display }}</p>
@@ -40,7 +40,7 @@
         </div>
 
         <!-- Admin Comments and Buttons -->
-        <div class="col-md-4">
+        <div class="col-md-6">
             <div>
                 <p><strong>Status:</strong> {{ user_report.get_status_display }}</p>
             </div>
